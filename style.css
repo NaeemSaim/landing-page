@@ -1,32 +1,138 @@
-body {
-    display: flex;
-    flex-direction: column;
-    align-items: end;
-}
-
-.header-top, .header-bottom {
+.main-header {
+    height: 350px;
     background: #1F2937;
     color: white;
     font-family: Roboto;
 }
 
+.top-header {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 60px;
+}
+
 .logo {
-    margin-right: 231px;
     font-size: 24px;
+    font-weight: 900;
 }
 
-.links {
-    font-size: 12px;
-    padding: 5px;
+a {
+    list-style-type: none;
+    text-decoration: none;
+    padding-left: 10px;
+    color: white;
 }
 
-.text {
-    font-weight: bold;
+.bottom-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.title {
     font-size: 36px;
-    margin-top: 50px;
+    width: 300px;
+    
 }
 
-.subtext {
-    flex-wrap: wrap;
+.subtitle {
+    flex-direction: column;
+    width: 300px;
+}
+
+.hero-text {
+    max-width: 50%;
+}
+
+.hero-image {
     max-width: 400px;
+    width: 100%;
+    height: auto;
+}
+
+button {
+    background: #3882F6;
+    color: white;
+    width: 80px;
+    height: 30px;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    font-family: Roboto;
+}
+
+.boxes {
+    display: flex;
+    justify-content: space-around;
+}
+
+.boxes > div {
+    border: 5px solid blue;
+    width: 100px;
+    height: 100px;
+}
+
+.box-subtext {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-subtext > p {
+    font-family: Roboto;
+    font-size: 12px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: lightgrey;
+    margin: auto;
+    padding: 2%;
+    width: auto;
+    height: 150px;
+}
+
+.texted {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+}
+
+.quote {
+    font-family: Roboto;
+}
+
+.author {
+    font-family: Roboto;
+    font-weight: bold;
+}
+
+
+.action {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #3882F6;
+    color: white;
+    font-family: Roboto;
+}
+
+.bold {
+    font-weight: 900;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    background: black;
+    color: white;
+    font-family: Roboto;
+    font-size: 10px;
 }
